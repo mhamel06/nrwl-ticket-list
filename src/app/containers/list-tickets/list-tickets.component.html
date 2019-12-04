@@ -1,0 +1,9 @@
+<p>
+  list-tickets works!
+</p>
+<ul>
+  <li *ngFor="let t of tickets$ | async">
+  Ticket: {{t.id}}, {{t.description}}
+  </li>
+</ul>
+
