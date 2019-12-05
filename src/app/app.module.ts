@@ -23,7 +23,7 @@ import { userEntityReducer } from './state/reducers/user.reducer';
 import { UserEffects } from './state/effects/user.effects';
 import { ReactiveFormsModule } from '@angular/forms';
 
-const matModules = [
+export const matModules = [
   MatListModule,
   MatTableModule,
   MatFormFieldModule,

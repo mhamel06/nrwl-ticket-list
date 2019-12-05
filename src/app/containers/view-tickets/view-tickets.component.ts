@@ -51,7 +51,6 @@ export class ViewTicketsComponent implements OnInit, OnDestroy{
       takeUntil(this.onDestroy$),
       filter(ticket => !!ticket),
       tap(ticket => {
-        console.log(ticket);
         this.ticketFormGroup.patchValue(ticket)
       })
     ).subscribe();
