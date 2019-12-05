@@ -4,10 +4,11 @@ it works well.
 - If I had to make a custom filter, I would have added an additional field to the TicketsEntityState called filter
  - This would make it east to use selectors for filtering the tickets and keep the filter logic out of the container
 - Made the view ticket page before I looked too deeply at the backend api
- - If I had looked there first and originally planned to make all edits on the list page, I would have made that a page without any form elements.
- - Added go back button to make it easier to maintain state during navigation for now
- - Would like to of added some indication of whether a call succeeded or failed for the user. 
- - Also, should make an updated call to the backend after a failed call to be sure the state is up to date.
+  - If I had looked there first and originally planned to make all edits on the list page, I would have made that a page without any form elements
+- Added go back button to make it easier to maintain state during navigation for now
+- Would like to of added some indication of whether a call succeeded or failed for the user. 
+- Also, should make an updated call to the backend after a failed call to be sure the state is up to date.
+
 
 # Todo
  
