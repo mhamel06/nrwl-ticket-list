@@ -2,10 +2,12 @@ import { Ticket } from '../../backend.service';
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 import { createReducer, on } from '@ngrx/store';
 import { TicketActions } from '../actions';
+import { TicketEntityState } from '../../models/ticket.model';
 
-export const initialTicketState: EntityState<Ticket> = {
+export const initialTicketState: TicketEntityState = {
   ids: [],
   entities: {},
+  selectedTicketId: null,
 };
 
 export const ticketEntityAdapter: EntityAdapter<Ticket> =
@@ -19,5 +21,35 @@ export const ticketsEntityReducer = createReducer(
   on(
     TicketActions.ticketsLoadedSuccess,
     (state, {tickets}) => ticketEntityAdapter.upsertMany(tickets, state)
-  )
+  ),
+
+  on(
+    TicketActions.setSelectedTicket,
+    (state, {selectedTicketId}) => ({...state, selectedTicketId})
+  ),
+
+  on(
+    TicketActions.completeTicketSuccess,
+    (state, {ticketId, completed}) => ticketEntityAdapter.updateOne({
+      id: ticketId,
+      changes: {
+        completed
+      }
+    }, state)
+  ),
+
+  on(
+    TicketActions.assignTicketSuccess,
+    (state, {ticketId, userId}) => ticketEntityAdapter.updateOne({
+      id: ticketId,
+      changes: {
+        assigneeId: userId
+      }
+    }, state)
+  ),
+
+  on(
+    TicketActions.newTicketSuccess,
+    (state, {ticket}) => ticketEntityAdapter.upsertOne(ticket, state)
+  ),
 );

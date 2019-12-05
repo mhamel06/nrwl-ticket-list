@@ -1,0 +1,9 @@
+.ticket-form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-form-group > *{
+    width: 100%;
+
+}

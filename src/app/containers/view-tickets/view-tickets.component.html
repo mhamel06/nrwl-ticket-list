@@ -1,3 +1,28 @@
 <p>
-  view-tickets works!
+  Started view page as form before looking into backend thoroughly.
+  Moving edits to list page for now.
 </p>
+
+<form [formGroup]="ticketFormGroup" class="ticket-form-group">
+    <mat-form-field>
+      <input matInput placeholder="ID" formControlName="id" disabled>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Description" formControlName="description">
+    </mat-form-field>
+
+
+    <mat-form-field>
+      <mat-select placeholder="Assignee" formControlName="assigneeId">
+        <mat-option *ngFor="let user of (users$ | async)"
+                    [value]="user.id">{{user.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Completed" formControlName="completed">
+      <mat-option [value]="true">True</mat-option>
+      <mat-option [value]="false">False</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
