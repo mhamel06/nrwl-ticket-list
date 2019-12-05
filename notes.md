@@ -1,3 +1,10 @@
+# Design Notes
+- Could of used custom filter but have used material data table filter in the past and 
+it works well. 
+- If I had to make a custom filter, I would have added an additional field to the TicketsEntityState called filter
+ - This would make it east to use selectors for filtering the tickets and keep the filter logic out of the container
+ 
+
 # Todo
  
 # Done
