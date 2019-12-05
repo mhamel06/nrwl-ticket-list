@@ -20,7 +20,7 @@ export class TicketEffects {
     ofType(TicketActions.assignTicket),
     mergeMap(({ticketId, userId}) =>
       this.backend.assign(ticketId, userId).pipe(
-        map(() => TicketActions.assignTicketSuccess({ticketId, userId})),
+        map((ticket) => TicketActions.assignTicketSuccess({ticket})),
         catchError(error => of(TicketActions.assignTicketFail({error}))))
     ))
   );
@@ -29,7 +29,7 @@ export class TicketEffects {
     ofType(TicketActions.completeTicket),
     mergeMap(({ticketId, completed}) =>
       this.backend.complete(ticketId, completed).pipe(
-        map(() => TicketActions.completeTicketSuccess({ticketId, completed})),
+        map((ticket) => TicketActions.completeTicketSuccess({ticket})),
         catchError(error => of(TicketActions.completeTicketFail({error})))
       )
     ))

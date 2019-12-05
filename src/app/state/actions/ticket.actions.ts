@@ -41,7 +41,7 @@ export const completeTicketFail = createAction(
 
 export const completeTicketSuccess = createAction(
   '[Ticket] Complete Ticket Success',
-  props<{ ticketId: number, completed: boolean }>()
+  props<{ ticket: Ticket }>()
 );
 
 export const assignTicket = createAction(
@@ -56,7 +56,7 @@ export const assignTicketFail = createAction(
 
 export const assignTicketSuccess = createAction(
   '[Ticket] Assign Ticket Success',
-  props<{ ticketId: number, userId: number }>()
+  props<{ ticket: Ticket}>()
 );
 
 export const newTicket = createAction(

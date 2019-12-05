@@ -30,20 +30,20 @@ export const ticketsEntityReducer = createReducer(
 
   on(
     TicketActions.completeTicketSuccess,
-    (state, {ticketId, completed}) => ticketEntityAdapter.updateOne({
-      id: ticketId,
+    (state, {ticket}) => ticketEntityAdapter.updateOne({
+      id: ticket.id,
       changes: {
-        completed
+        ...ticket
       }
     }, state)
   ),
 
   on(
     TicketActions.assignTicketSuccess,
-    (state, {ticketId, userId}) => ticketEntityAdapter.updateOne({
-      id: ticketId,
+    (state, {ticket}) => ticketEntityAdapter.updateOne({
+      id: ticket.id,
       changes: {
-        assigneeId: userId
+        ...ticket
       }
     }, state)
   ),
