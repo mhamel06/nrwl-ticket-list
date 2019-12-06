@@ -1,0 +1,682 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListTicketsComponent should match snapshot 1`] = `
+<app-list-tickets
+  dataSource={[Function MatTableDataSource]}
+  displayedColumns={[Function Array]}
+  onDestroy$={[Function Subject]}
+  store={[Function MockStore]}
+  tickets$={[Function Store]}
+  users$={[Function Store]}
+>
+  <mat-form-field
+    class="mat-form-field ng-tns-c6-0 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder _mat-animation-noopable"
+  >
+    <div
+      class="mat-form-field-wrapper"
+    >
+      <div
+        class="mat-form-field-flex"
+      >
+        
+        
+        <div
+          class="mat-form-field-infix"
+        >
+          <input
+            aria-invalid="false"
+            aria-required="false"
+            class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored"
+            id="mat-input-2"
+            matinput=""
+            ng-reflect-placeholder="Ticket Description"
+            placeholder="Ticket Description"
+          />
+          <span
+            class="mat-form-field-label-wrapper"
+          >
+            
+            <label
+              aria-owns="mat-input-2"
+              class="mat-form-field-label ng-tns-c6-0 mat-empty mat-form-field-empty ng-star-inserted"
+              for="mat-input-2"
+              id="mat-form-field-label-13"
+              ng-reflect-disabled="true"
+              ng-reflect-ng-switch="false"
+            >
+              
+              
+              <span
+                class="ng-tns-c6-0 ng-star-inserted"
+              >
+                Ticket Description
+              </span>
+              
+              
+            </label>
+          </span>
+        </div>
+        
+      </div>
+      
+      <div
+        class="mat-form-field-underline ng-tns-c6-0 ng-star-inserted"
+      >
+        <span
+          class="mat-form-field-ripple"
+        />
+      </div>
+      <div
+        class="mat-form-field-subscript-wrapper"
+        ng-reflect-ng-switch="hint"
+      >
+        
+        
+        <div
+          class="mat-form-field-hint-wrapper ng-tns-c6-0 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+          style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+        >
+          
+          <div
+            class="mat-form-field-hint-spacer"
+          />
+        </div>
+      </div>
+    </div>
+  </mat-form-field><button
+    class="mat-button _mat-animation-noopable"
+    mat-button=""
+  >
+    <span
+      class="mat-button-wrapper"
+    >
+      New Ticket
+    </span>
+    <div
+      class="mat-button-ripple mat-ripple"
+      matripple=""
+      ng-reflect-centered="false"
+      ng-reflect-disabled="false"
+      ng-reflect-trigger="[object HTMLButtonElement]"
+    />
+    <div
+      class="mat-button-focus-overlay"
+    />
+  </button><div
+    class="filter-row"
+  >
+    <mat-form-field
+      class="filter-row mat-form-field ng-tns-c6-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder _mat-animation-noopable"
+    >
+      <div
+        class="mat-form-field-wrapper"
+      >
+        <div
+          class="mat-form-field-flex"
+        >
+          
+          
+          <div
+            class="mat-form-field-infix"
+          >
+            <input
+              aria-invalid="false"
+              aria-required="false"
+              class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored"
+              id="mat-input-3"
+              matinput=""
+              ng-reflect-placeholder="Filter"
+              placeholder="Filter"
+            />
+            <span
+              class="mat-form-field-label-wrapper"
+            >
+              
+              <label
+                aria-owns="mat-input-3"
+                class="mat-form-field-label ng-tns-c6-1 mat-empty mat-form-field-empty ng-star-inserted"
+                for="mat-input-3"
+                id="mat-form-field-label-15"
+                ng-reflect-disabled="true"
+                ng-reflect-ng-switch="false"
+              >
+                
+                
+                <span
+                  class="ng-tns-c6-1 ng-star-inserted"
+                >
+                  Filter
+                </span>
+                
+                
+              </label>
+            </span>
+          </div>
+          
+        </div>
+        
+        <div
+          class="mat-form-field-underline ng-tns-c6-1 ng-star-inserted"
+        >
+          <span
+            class="mat-form-field-ripple"
+          />
+        </div>
+        <div
+          class="mat-form-field-subscript-wrapper"
+          ng-reflect-ng-switch="hint"
+        >
+          
+          
+          <div
+            class="mat-form-field-hint-wrapper ng-tns-c6-1 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+            style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+          >
+            
+            <div
+              class="mat-form-field-hint-spacer"
+            />
+          </div>
+        </div>
+      </div>
+    </mat-form-field>
+  </div><table
+    class="mat-elevation-z0 mat-table"
+    mat-table=""
+    ng-reflect-data-source="[object Object]"
+    role="grid"
+  >
+    <thead
+      role="rowgroup"
+    >
+      
+      <tr
+        class="mat-header-row ng-star-inserted"
+        mat-header-row=""
+        role="row"
+      >
+        
+        <th
+          class="mat-header-cell cdk-column-id mat-column-id ng-star-inserted"
+          mat-header-cell=""
+          role="columnheader"
+        >
+           ID 
+        </th>
+        <th
+          class="mat-header-cell cdk-column-description mat-column-description ng-star-inserted"
+          mat-header-cell=""
+          role="columnheader"
+        >
+           Description 
+        </th>
+        <th
+          class="mat-header-cell cdk-column-assigneeName mat-column-assigneeName ng-star-inserted"
+          mat-header-cell=""
+          role="columnheader"
+        >
+           Assignee 
+        </th>
+        <th
+          class="mat-header-cell cdk-column-completed mat-column-completed ng-star-inserted"
+          mat-header-cell=""
+          role="columnheader"
+        >
+           Completed 
+        </th>
+        <th
+          class="mat-header-cell cdk-column-view mat-column-view ng-star-inserted"
+          mat-header-cell=""
+          role="columnheader"
+        />
+      </tr>
+    </thead>
+    <tbody
+      role="rowgroup"
+    >
+      
+      <tr
+        class="mat-row ng-star-inserted"
+        mat-row=""
+        role="row"
+      >
+        
+        <td
+          class="mat-cell cdk-column-id mat-column-id ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+           0 
+        </td>
+        <td
+          class="mat-cell cdk-column-description mat-column-description ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+           Install a monitor arm 
+        </td>
+        <td
+          class="mat-cell cdk-column-assigneeName mat-column-assigneeName ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+          <mat-form-field
+            class="mat-form-field ng-tns-c6-2 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder _mat-animation-noopable"
+          >
+            <div
+              class="mat-form-field-wrapper"
+            >
+              <div
+                class="mat-form-field-flex"
+              >
+                
+                
+                <div
+                  class="mat-form-field-infix"
+                >
+                  <mat-select
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    aria-multiselectable="false"
+                    aria-required="false"
+                    class="mat-select ng-tns-c9-3 mat-select-empty ng-star-inserted"
+                    id="mat-select-4"
+                    ng-reflect-value="111"
+                    role="listbox"
+                    tabindex="0"
+                  >
+                    <div
+                      aria-hidden="true"
+                      cdk-overlay-origin=""
+                      class="mat-select-trigger"
+                    >
+                      <div
+                        class="mat-select-value"
+                        ng-reflect-ng-switch="true"
+                      >
+                        
+                        <span
+                          class="mat-select-placeholder ng-tns-c9-3 ng-star-inserted"
+                        >
+                           
+                        </span>
+                        
+                      </div>
+                      <div
+                        class="mat-select-arrow-wrapper"
+                      >
+                        <div
+                          class="mat-select-arrow"
+                        />
+                      </div>
+                    </div>
+                    
+                  </mat-select>
+                  <span
+                    class="mat-form-field-label-wrapper"
+                  >
+                    
+                  </span>
+                </div>
+                
+              </div>
+              
+              <div
+                class="mat-form-field-underline ng-tns-c6-2 ng-star-inserted"
+              >
+                <span
+                  class="mat-form-field-ripple"
+                />
+              </div>
+              <div
+                class="mat-form-field-subscript-wrapper"
+                ng-reflect-ng-switch="hint"
+              >
+                
+                
+                <div
+                  class="mat-form-field-hint-wrapper ng-tns-c6-2 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                  style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+                >
+                  
+                  <div
+                    class="mat-form-field-hint-spacer"
+                  />
+                </div>
+              </div>
+            </div>
+          </mat-form-field>
+        </td>
+        <td
+          class="mat-cell cdk-column-completed mat-column-completed ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+          <mat-form-field
+            class="mat-form-field ng-tns-c6-4 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder _mat-animation-noopable"
+          >
+            <div
+              class="mat-form-field-wrapper"
+            >
+              <div
+                class="mat-form-field-flex"
+              >
+                
+                
+                <div
+                  class="mat-form-field-infix"
+                >
+                  <mat-select
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    aria-multiselectable="false"
+                    aria-required="false"
+                    class="mat-select ng-tns-c9-5 mat-select-empty ng-star-inserted"
+                    id="mat-select-5"
+                    ng-reflect-value="false"
+                    role="listbox"
+                    tabindex="0"
+                  >
+                    <div
+                      aria-hidden="true"
+                      cdk-overlay-origin=""
+                      class="mat-select-trigger"
+                    >
+                      <div
+                        class="mat-select-value"
+                        ng-reflect-ng-switch="true"
+                      >
+                        
+                        <span
+                          class="mat-select-placeholder ng-tns-c9-5 ng-star-inserted"
+                        >
+                           
+                        </span>
+                        
+                      </div>
+                      <div
+                        class="mat-select-arrow-wrapper"
+                      >
+                        <div
+                          class="mat-select-arrow"
+                        />
+                      </div>
+                    </div>
+                    
+                  </mat-select>
+                  <span
+                    class="mat-form-field-label-wrapper"
+                  >
+                    
+                  </span>
+                </div>
+                
+              </div>
+              
+              <div
+                class="mat-form-field-underline ng-tns-c6-4 ng-star-inserted"
+              >
+                <span
+                  class="mat-form-field-ripple"
+                />
+              </div>
+              <div
+                class="mat-form-field-subscript-wrapper"
+                ng-reflect-ng-switch="hint"
+              >
+                
+                
+                <div
+                  class="mat-form-field-hint-wrapper ng-tns-c6-4 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                  style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+                >
+                  
+                  <div
+                    class="mat-form-field-hint-spacer"
+                  />
+                </div>
+              </div>
+            </div>
+          </mat-form-field>
+        </td>
+        <td
+          class="mat-cell cdk-column-view mat-column-view ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+          <a
+            href="/0"
+            ng-reflect-router-link="0"
+          >
+            View
+          </a>
+        </td>
+      </tr>
+      <tr
+        class="mat-row ng-star-inserted"
+        mat-row=""
+        role="row"
+      >
+        
+        <td
+          class="mat-cell cdk-column-id mat-column-id ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+           1 
+        </td>
+        <td
+          class="mat-cell cdk-column-description mat-column-description ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+           Move the desk to the new location 
+        </td>
+        <td
+          class="mat-cell cdk-column-assigneeName mat-column-assigneeName ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+          <mat-form-field
+            class="mat-form-field ng-tns-c6-6 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder _mat-animation-noopable"
+          >
+            <div
+              class="mat-form-field-wrapper"
+            >
+              <div
+                class="mat-form-field-flex"
+              >
+                
+                
+                <div
+                  class="mat-form-field-infix"
+                >
+                  <mat-select
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    aria-multiselectable="false"
+                    aria-required="false"
+                    class="mat-select ng-tns-c9-7 mat-select-empty ng-star-inserted"
+                    id="mat-select-6"
+                    ng-reflect-value="111"
+                    role="listbox"
+                    tabindex="0"
+                  >
+                    <div
+                      aria-hidden="true"
+                      cdk-overlay-origin=""
+                      class="mat-select-trigger"
+                    >
+                      <div
+                        class="mat-select-value"
+                        ng-reflect-ng-switch="true"
+                      >
+                        
+                        <span
+                          class="mat-select-placeholder ng-tns-c9-7 ng-star-inserted"
+                        >
+                           
+                        </span>
+                        
+                      </div>
+                      <div
+                        class="mat-select-arrow-wrapper"
+                      >
+                        <div
+                          class="mat-select-arrow"
+                        />
+                      </div>
+                    </div>
+                    
+                  </mat-select>
+                  <span
+                    class="mat-form-field-label-wrapper"
+                  >
+                    
+                  </span>
+                </div>
+                
+              </div>
+              
+              <div
+                class="mat-form-field-underline ng-tns-c6-6 ng-star-inserted"
+              >
+                <span
+                  class="mat-form-field-ripple"
+                />
+              </div>
+              <div
+                class="mat-form-field-subscript-wrapper"
+                ng-reflect-ng-switch="hint"
+              >
+                
+                
+                <div
+                  class="mat-form-field-hint-wrapper ng-tns-c6-6 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                  style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+                >
+                  
+                  <div
+                    class="mat-form-field-hint-spacer"
+                  />
+                </div>
+              </div>
+            </div>
+          </mat-form-field>
+        </td>
+        <td
+          class="mat-cell cdk-column-completed mat-column-completed ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+          <mat-form-field
+            class="mat-form-field ng-tns-c6-8 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-legacy mat-form-field-can-float mat-form-field-hide-placeholder _mat-animation-noopable"
+          >
+            <div
+              class="mat-form-field-wrapper"
+            >
+              <div
+                class="mat-form-field-flex"
+              >
+                
+                
+                <div
+                  class="mat-form-field-infix"
+                >
+                  <mat-select
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    aria-multiselectable="false"
+                    aria-required="false"
+                    class="mat-select ng-tns-c9-9 mat-select-empty ng-star-inserted"
+                    id="mat-select-7"
+                    ng-reflect-value="false"
+                    role="listbox"
+                    tabindex="0"
+                  >
+                    <div
+                      aria-hidden="true"
+                      cdk-overlay-origin=""
+                      class="mat-select-trigger"
+                    >
+                      <div
+                        class="mat-select-value"
+                        ng-reflect-ng-switch="true"
+                      >
+                        
+                        <span
+                          class="mat-select-placeholder ng-tns-c9-9 ng-star-inserted"
+                        >
+                           
+                        </span>
+                        
+                      </div>
+                      <div
+                        class="mat-select-arrow-wrapper"
+                      >
+                        <div
+                          class="mat-select-arrow"
+                        />
+                      </div>
+                    </div>
+                    
+                  </mat-select>
+                  <span
+                    class="mat-form-field-label-wrapper"
+                  >
+                    
+                  </span>
+                </div>
+                
+              </div>
+              
+              <div
+                class="mat-form-field-underline ng-tns-c6-8 ng-star-inserted"
+              >
+                <span
+                  class="mat-form-field-ripple"
+                />
+              </div>
+              <div
+                class="mat-form-field-subscript-wrapper"
+                ng-reflect-ng-switch="hint"
+              >
+                
+                
+                <div
+                  class="mat-form-field-hint-wrapper ng-tns-c6-8 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                  style="opacity:1;transform:translateY(0%);0:opacity;1:transform;"
+                >
+                  
+                  <div
+                    class="mat-form-field-hint-spacer"
+                  />
+                </div>
+              </div>
+            </div>
+          </mat-form-field>
+        </td>
+        <td
+          class="mat-cell cdk-column-view mat-column-view ng-star-inserted"
+          mat-cell=""
+          role="gridcell"
+        >
+          <a
+            href="/1"
+            ng-reflect-router-link="1"
+          >
+            View
+          </a>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="mat-table-sticky"
+      role="rowgroup"
+      style="display: none; bottom: 0px; position: sticky; z-index: 10;"
+    >
+      
+    </tfoot>
+  </table>
+</app-list-tickets>
+`;
