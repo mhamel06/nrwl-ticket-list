@@ -1,3 +1,6 @@
+# Update
+- After the assignment was completed, I added a few tests and switched the app to use jest. The original application before the updates can be found here: [https://github.com/mhamel06/nrwl-ticket-list/tree/bc814bb19813c3937d0dace1e09a95f7f53e0f92](https://github.com/mhamel06/nrwl-ticket-list/tree/bc814bb19813c3937d0dace1e09a95f7f53e0f92)
+
 # Design Notes
 - Could of used custom filter but have used material data table filter in the past and 
 it works well. 
