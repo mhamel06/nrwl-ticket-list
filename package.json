@@ -22,7 +22,7 @@
     "@nrwl/jest": "8.8.3",
     "core-js": "2.6.2",
     "jasmine-marbles": "^0.6.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "rxjs": "6.5.2",
     "tslib": "^1.10.0",
     "zone.js": "0.9.1"
